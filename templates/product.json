@@ -8,6 +8,13 @@
           "settings": {
           }
         },
+        "de12259f-2d32-4ae5-b779-407bfcd755e0": {
+          "type": "text",
+          "settings": {
+            "text": "Apple Watch Armband",
+            "text_style": "body"
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -40,6 +47,7 @@
       },
       "block_order": [
         "title",
+        "de12259f-2d32-4ae5-b779-407bfcd755e0",
         "caption",
         "price",
         "variant_picker",
