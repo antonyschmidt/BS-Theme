@@ -1,6 +1,6 @@
 <section
   id="MainProduct-{{ section.id }}"
-  class="page-width section-{{ section.id }}-padding"
+  class="page-width section-{{ section.id }}-padding section-{{section.id}}-layout"
   data-section="{{ section.id }}"
 >
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
@@ -17,11 +17,17 @@
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
-
+         
     @media screen and (min-width: 750px) {
       .section-{{ section.id }}-padding {
         padding-top: {{ section.settings.padding_top }}px;
         padding-bottom: {{ section.settings.padding_bottom }}px;
+        padding-right:0;
+        padding-left:0;
+      }
+
+      .section-{{section.id}}-layout {
+        max-width: 1125px;
       }
     }
   {%- endstyle -%}
@@ -86,12 +92,19 @@
                   </h2>
                 </a>
               </div>
+              <div class="product-type-wrapper">
+                {%- if product.type -%}
+                  <p>
+                    {{product.type | escape}}
+                  </p>
+                {%- endif -%}
+              </div>
+           <div class="product-price-wrapper">
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
                   product: product,
                   use_variant: true,
-                  show_badges: true,
                   price_class: 'price--large'
                 -%}
               </div>
@@ -105,6 +118,7 @@
                   {%- endif -%}
                 </div>
               {%- endif -%}
+           </div>
               <div {{ block.shopify_attributes }}>
                 {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                 {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
