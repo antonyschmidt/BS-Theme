@@ -8,11 +8,10 @@
           "settings": {
           }
         },
-        "de12259f-2d32-4ae5-b779-407bfcd755e0": {
-          "type": "text",
+        "53c9d486-f456-472c-90a1-9a0046d715f8": {
+          "type": "custom_liquid",
           "settings": {
-            "text": "Apple Watch Armband",
-            "text_style": "body"
+            "custom_liquid": ""
           }
         },
         "caption": {
@@ -47,7 +46,7 @@
       },
       "block_order": [
         "title",
-        "de12259f-2d32-4ae5-b779-407bfcd755e0",
+        "53c9d486-f456-472c-90a1-9a0046d715f8",
         "caption",
         "price",
         "variant_picker",
