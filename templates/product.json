@@ -5,7 +5,8 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "53c9d486-f456-472c-90a1-9a0046d715f8": {
           "type": "custom_liquid",
@@ -22,7 +23,8 @@
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -38,7 +40,8 @@
         },
         "description": {
           "type": "description",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -59,11 +62,11 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 32,
-        "padding_bottom": 12
+        "padding_top": 44,
+        "padding_bottom": 44
       }
-    }
-  "product-recommendations": {
+    },
+    "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
         "heading": "You may also like",
