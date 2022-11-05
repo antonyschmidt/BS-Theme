@@ -75,11 +75,6 @@
         "padding_bottom": 44
       }
     },
-    "e29820d2-ae20-4e0e-8d7b-7f3774ad598e": {
-      "type": "features",
-      "settings": {
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -100,7 +95,6 @@
   },
   "order": [
     "main",
-    "e29820d2-ae20-4e0e-8d7b-7f3774ad598e",
     "product-recommendations"
   ]
 }
