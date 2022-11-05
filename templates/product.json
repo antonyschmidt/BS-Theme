@@ -72,11 +72,6 @@
         "padding_bottom": 44
       }
     },
-    "e29820d2-ae20-4e0e-8d7b-7f3774ad598e": {
-      "type": "features",
-      "settings": {
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -93,11 +88,16 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "3d55fe15-e115-4ba5-a930-e0dcaaf184f8": {
+      "type": "features",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "e29820d2-ae20-4e0e-8d7b-7f3774ad598e",
-    "product-recommendations"
+    "product-recommendations",
+    "3d55fe15-e115-4ba5-a930-e0dcaaf184f8"
   ]
 }
