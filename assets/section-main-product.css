@@ -4,6 +4,7 @@
 
 .product.grid {
   gap: 0;
+  display: flex;
 }
 
 .product--no-media {
@@ -58,7 +59,7 @@
 
 @media screen and (min-width: 990px) {
   .product--large:not(.product--no-media) .product__media-wrapper {
-    max-width: 600px;
+    max-width: 480px;
     width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
@@ -69,7 +70,8 @@
   .product--large:not(.product--no-media) .product__info-wrapper {
     padding: 0;
     max-width: 475px;
-    width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2);
+    width: 475px;
+    margin-left: 50px;
     height: 480px;
     flex-direction: column;
     display: flex;
