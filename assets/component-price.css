@@ -32,17 +32,21 @@
   color: #1F47FF;
 }
 
+.price--large {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0;
+}
+
 @media screen and (min-width: 750px) {
   .price {
     margin-bottom: 0;
   }
-}
 
-.price--large {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
-  letter-spacing: 0;
+  .price--large {
+    font-size: 18px;
+  }
 }
 
 .price--sold-out .price__availability,
@@ -78,7 +82,6 @@
 .price--on-sale .price-item--regular {
   text-decoration: line-through;
   color: rgba(var(--color-foreground), 0.75);
-  font-size: 1.3rem;
 }
 
 .unit-price {

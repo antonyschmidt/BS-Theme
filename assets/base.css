@@ -439,7 +439,7 @@ h5,
 
 h1,
 .h1 {
-  font-size: calc(var(--font-heading-scale) * 3rem);
+  font-size: 22px;
 }
 
 @media only screen and (min-width: 750px) {
@@ -521,7 +521,7 @@ blockquote {
   font-weight: 500;
   align-self: flex-end;
   line-height: 13px;
-  margin-left: 6px;
+  margin-left: 8px;
 }
 
 .caption-with-letter-spacing {
@@ -1060,6 +1060,8 @@ summary::-webkit-details-marker {
   width: 100%;
 }
 
+
+
 .grid--3-col .grid__item {
   width: calc(33.33% - var(--grid-mobile-horizontal-spacing) * 2 / 3);
 }
@@ -1068,6 +1070,11 @@ summary::-webkit-details-marker {
   .grid--3-col .grid__item {
     width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
   }
+
+  /* .grid--1-col .grid__item {
+    max-width: 480px;
+  } */
+
 }
 
 .grid--2-col .grid__item {
@@ -1089,6 +1096,7 @@ summary::-webkit-details-marker {
 
   .grid--2-col-tablet .grid__item {
     width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+    margin-top: 0;
   }
 }
 
@@ -1415,10 +1423,20 @@ button.shopify-payment-button__button--unbranded {
 .button-label,
 .shopify-challenge__button,
 .customer button {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   border-radius: 3px;
   line-height: 22px;
+}
+
+@media screen and (min-width: 950px) {
+
+  .button,
+  .button-label,
+  .shopify-challenge__button,
+  .customer button {
+    font-size: 18px;
+  }
 }
 
 .button--tertiary {
@@ -1446,7 +1464,7 @@ button.shopify-payment-button__button--unbranded {
 
 .button--full-width {
   display: flex;
-  height: 52px;
+  min-height: 52px;
   width: 100%;
 }
 
