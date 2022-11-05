@@ -45,6 +45,7 @@
     .features__cards-wrapper {
         flex-direction: row;
         justify-content: space-between;
+        padding: 0 44px;
     }
 
     .features__icon-wrapper img {
@@ -57,6 +58,14 @@
 
     .features__section-wrapper {
         margin: 77px auto 48px auto;
+    }
+
+}
+
+@media screen and (min-width: 1220px) {
+
+    .features__cards-wrapper {
+        padding: 0;
     }
 
 }
