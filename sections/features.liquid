@@ -1,5 +1,35 @@
-<div>
-  Hello World
+{{ 'features.css' | asset_url | stylesheet_tag }}
+
+<div class="features__section-wrapper">
+  <div class="features__cards-wrapper">
+    <div class="single__card-wrapper">
+      <div class="features__icon-wrapper">
+        <img src="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/002/894/original/badge.png" defer>
+      </div>
+      <div class="features__description-wrapper">
+        <h3>100% Qualität</h3>
+        <p>Dank weichem Silikon</p>
+      </div>
+    </div>
+    <div class="single__card-wrapper">
+      <div class="features__icon-wrapper">
+        <img src="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/002/894/original/badge.png" defer>
+      </div>
+      <div class="features__description-wrapper">
+        <h3>100% Qualität</h3>
+        <p>Dank weichem Silikon</p>
+      </div>
+    </div>
+    <div class="single__card-wrapper">
+      <div class="features__icon-wrapper">
+        <img src="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/002/894/original/badge.png" defer>
+      </div>
+      <div class="features__description-wrapper">
+        <h3>100% Qualität</h3>
+        <p>Dank weichem Silikon</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% schema %}
@@ -13,9 +43,3 @@
     ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
