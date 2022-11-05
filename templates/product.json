@@ -5,7 +5,8 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "53c9d486-f456-472c-90a1-9a0046d715f8": {
           "type": "custom_liquid",
@@ -22,7 +23,8 @@
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "cdbbdea1-a364-4ecf-ba0a-9bc94332a538": {
           "type": "inventory",
@@ -46,7 +48,8 @@
         },
         "description": {
           "type": "description",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -92,6 +95,8 @@
     "3d55fe15-e115-4ba5-a930-e0dcaaf184f8": {
       "type": "features",
       "settings": {
+        "features-header": "50% Qualität",
+        "features-description": "Dank weichem Silikon"
       }
     }
   },
